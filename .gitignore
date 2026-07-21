@@ -1,0 +1,104 @@
+# =====================================================================
+# AssetFlow — root .gitignore
+# Keeps secrets, dependencies, build output, and internal notes out of git.
+# =====================================================================
+
+# ------------------------------
+# Secrets / environment
+# ------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets.*
+credentials.*
+
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+
+venv/
+.venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# ------------------------------
+# Node / frontend
+# ------------------------------
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+*.tsbuildinfo
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.local
+
+# ------------------------------
+# Databases / runtime data
+# ------------------------------
+*.db
+*.sqlite3
+server/data/agent_conversations/
+uploads/
+tmp/
+
+# ------------------------------
+# Logs / runtime
+# ------------------------------
+*.log
+logs/
+*.pid
+*.pid.lock
+
+# ------------------------------
+# IDE / editor / OS
+# ------------------------------
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+*.swp
+*.swo
+*.suo
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------
+# Internal working notes / handover docs
+# Only the top-level README.md and SETUP.md are tracked.
+# ------------------------------
+*.md
+!/README.md
+!/SETUP.md

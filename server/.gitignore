@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Virtual Environment
+venv/
+env/
+.venv/
+.env/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Database
+*.db
+*.sqlite3
+
+# Alembic
+# (keep alembic/versions tracked, but ignore any local overrides)
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Uploaded files / temp
+uploads/
+tmp/
