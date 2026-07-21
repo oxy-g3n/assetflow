@@ -1,0 +1,48 @@
+/* 1. CSS Reset (handled mostly by MUI CssBaseline) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Root height fix */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* 3. Smooth font rendering */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Remove default focus outline (MUI handles focus styles) */
+:focus {
+  outline: none;
+}
+
+/* 5. Scrollbar styling (optional, matches your dashboard vibe) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 163, 184, 0.4); /* slate-400 */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(148, 163, 184, 0.6);
+}

@@ -1,0 +1,22 @@
+fastapi
+uvicorn[standard]
+python-jose[cryptography]
+passlib[bcrypt]
+pydantic[email]
+pydantic-settings
+python-multipart
+python-dotenv
+sqlalchemy
+psycopg2-binary
+asyncpg
+alembic
+greenlet
+bcrypt<4.0.0
+azure-cognitiveservices-speech
+azure-ai-projects
+azure-identity
+openai
+requests
+httpx
+PyYAML
+toon_format @ git+https://github.com/toon-format/toon-python.git@6b26984a01279defdcf40ab9d09bc418fe8133ac
